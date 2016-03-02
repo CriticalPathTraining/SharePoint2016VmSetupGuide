@@ -1,0 +1,23 @@
+AccountName,FirstName,LastName,UserName,Manager,Title,Dept
+ClydeB,Clyde,Bixby,Clyde Bixby,,CEO,Executive Management
+WouterV,Wouter,Van Vugt,Wouter Van Vugt,ClydeB,Director of Human Resources,Human Resources
+KenS,Ken,Sanchez,Ken Sanchez,WouterV,Special Assistant to the CEO,Human Resources
+AshleyH,Ashley,Hillier,Ashley Hillier,WouterV,Techincal Trainer,Human Resources
+JohnH,John,Holiday,John Holiday,ClydeB,Operations Manager,Operations
+MauriceP,Maurice,Prather,Maurice Prather,ClydeB,CIO,Information Technology
+MattMcD,Matthew,McDermott,Matthew McDermott,MauriceP,IT Manager,Information Technology
+KeithM,Keith,Moon,Keith Moon,MattMcD,System Administrator,Information Technology
+SpencerR,Spencer,Reed,Spencer Reed,MattMcD,Records Manager,Information Technology
+PaulS,Paul,Schaeflein,Paul Schaeflein,MattMcD,Software Developer,Information Technology
+ScotH,Scot,Hillier,Scot Hillier,ClydeB,CFO,Finance
+BernieM,Bernie,Madeoff,Bernie Madeoff,ScotH,Accountant,Finance
+AC,Andrew,Connell,Andrew Connell,ScotH,Sales Director,Sales
+ChandlerB,Chandler,Bing,Chandler Bing,AC,Sales Representitive,Sales
+WilsonP,Wilson,Picket,Wilson Picket,AC,Sales Representative,Sales
+ChristinaW,Christina,Wheeler,Christina Wheeler,ClydeB,Marketing Director,Marketing
+KatieB,Katie,Bowman,Katie Bowman,ChristinaW,Web Designer,Marketing
+AsifR,Asif,Rehmani,Asif Rehmani,ClydeB,Vice President of Product Development,Product Development
+TedP,Ted,Pattison,Ted Pattison,AsifR,Senior Toy Scientist,Product Development
+DavidM,David,Mann,David Mann,AsifR,Toy Scientist,Product Development
+GaryL,Gary,Lapointe,Gary Lapointe,AsifR,Toy Scientist,Product Development
+FabianW,Fabian,Williams,Fabian Williams,AsifR,Lead Toy Tester,Product Development
