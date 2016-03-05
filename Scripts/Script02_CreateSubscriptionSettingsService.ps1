@@ -5,7 +5,7 @@ if ($snapin -eq $null) {
     return
 }
 
-# assign SharePoint add-in App Web domain to wingtip.com
+# assign root domain name to configure URL used to access app webs
 Set-SPAppDomain "wingtip.com" –confirm:$false 
 
 $subscriptionSettingsService = Get-SPServiceInstance | where {$_.TypeName -like "Microsoft SharePoint Foundation Subscription Settings Service"}

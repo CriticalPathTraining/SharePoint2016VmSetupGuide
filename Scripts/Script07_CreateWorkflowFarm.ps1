@@ -20,7 +20,7 @@ Invoke-Sqlcmd -ServerInstance "WINGTIPSERVER\SharePoint" -Query $sql
 # determine path to CreateWorkflowFarmScript.ps1
 $currentScriptPath = $MyInvocation.MyCommand.Path
 $scriptFolder = Split-Path $currentScriptPath
-$targetScriptPath = Join-Path $scriptFolder "\Script08_CreateWorkflowFarmScript.ps1"
+$targetScriptPath = Join-Path $scriptFolder "\Script07_CreateWorkflowFarmScript.ps1"
 
 Write-Host
 Write-Host "Executing script $targetScriptPath using credentials of SP_Workflow"

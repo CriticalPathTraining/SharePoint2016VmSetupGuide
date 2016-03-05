@@ -145,10 +145,7 @@ Grant-WebApplicationPermissionsToServiceAccount
 
 # launch sites in Internet Explorer
 #Start iexplore and launch sites at web application roots
-$navOpenInBackgroundTab = 0x1000;
-$ie = New-Object -com InternetExplorer.Application
-$ie.Navigate2("http://wingtipserver");
-$ie.Visible = $true;
+Start iexplore "http://wingtipserver"
 
 Write-Host "Script complete - the Wingtip web appplications have been created"
 Write-Host 
