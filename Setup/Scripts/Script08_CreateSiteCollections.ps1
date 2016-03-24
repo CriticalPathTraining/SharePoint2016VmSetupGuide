@@ -14,16 +14,23 @@ function Create-SiteCollection($url, $title, $template){
       Write-Host "Deleting existing site collection at $url..." -ForegroundColor Red
       Remove-SPSite -Identity $site -Confirm:$false
     }
+    # create site
+    $site = New-SPSite `
+                -HostHeaderWebApplication $webapp `
+                -Url $url `
+                -Name $title `
+                -OwnerAlias $siteAdmin1 `
+                -SecondaryOwnerAlias $siteAdmin2 `
+                -Template $template
 
-    New-SPSite `
-        -HostHeaderWebApplication $webapp `
-        -Url $url `
-        -Name $title `
-        -OwnerAlias $siteAdmin1 `
-        -SecondaryOwnerAlias $siteAdmin2 `
-        -Template $template
+   # configure permissions for all users
+   $account = $site.RootWeb.EnsureUser(" WINGTIP\domain users")
+   $role = $site.RootWeb.RoleDefinitions["Contribute"] 
+   $assignment = New-Object Microsoft.SharePoint.SPRoleAssignment($account)
+   $assignment.RoleDefinitionBindings.Add($role)
+   $site.RootWeb.RoleAssignments.Add($assignment)
 
-    Start iexplore $url
+   Start iexplore $url
 
 }
 
