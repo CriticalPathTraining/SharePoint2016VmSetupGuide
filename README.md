@@ -1,6 +1,6 @@
 # The SharePoint 2016 VM Setup Guide 
 
-### Updated March 23rd, 2016 for SharePoint Server 2016 RTM
+### Updated March 23rd, 2016 for the RTM version of SharePoint Server 2016
 
 This GITHUB repository contains the instructions and PowerShell scripts to
 install SharePoint Server 2016 in a single-server installation to create
