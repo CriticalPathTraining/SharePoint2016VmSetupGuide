@@ -38,5 +38,4 @@ Create-SiteCollection -url "https://intranet.wingtip.com" -title "Wingtip Intran
 Create-SiteCollection -url "https://search.wingtip.com" -title "Search Center" -template "SRCHCEN#0"
 Create-SiteCollection -url "https://disco.wingtip.com" -title "Discovery Center" -template "EDISC#0"
 Create-SiteCollection -url "https://www.wingtip.com" -title "Wingtip Toys" -template "BLANKINTERNET#0"
-Create-SiteCollection -url "https://bi.wingtip.com" -title "Wingtip BI Center" -template "BICenterSite#0"
 Create-SiteCollection -url "https://dev.wingtip.com" -title "Wingtip Dev Site" -template "DEV#0"
